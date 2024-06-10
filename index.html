@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: grid;
+            place-content: center;
+            justify-items: center;
+            height: 50vh;
+        }
+
+        .container {    
+            background-color: inherit;
+            width: 80%;
+            padding: 50px 0;
+        }
+      
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            position: relative;
+        }
+
+        p::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(40%, 40%);
+            border-right: 5px solid;
+            border-bottom: 5px solid;
+            border-image: linear-gradient(to left top, #333, #f0f0f0);
+            border-image-slice: 1;
+            padding: 50px;
+        }
+
+        p::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-50%, -100%);
+            border-left: 5px solid;
+            border-top: 5px solid;
+            border-image: linear-gradient(to right bottom, #333, #f0f0f0);
+            border-image-slice: 1;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hola, soy Alex Medrano</h1>
+        <p>Me apasiona el desarrollo web y tengo experiencia en HTML, CSS y JavaScript. Siempre estoy buscando nuevas oportunidades para aprender y crecer profesionalmente.</p>
+    </div>
+</body>
+</html>
